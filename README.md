@@ -18,7 +18,7 @@ To get the latest version, simply require `"brnlbs/mailinator": "~1.0"` in your 
 ## Usage
 
 ``` php
-$client = new Brnlbs\Mailinator\Client('api_key');
+$client = new Brnlbs\Mailinator\Api\Mail('api_key');
 
 try
 {
