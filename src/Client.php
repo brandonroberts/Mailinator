@@ -53,7 +53,7 @@ class Client
     {
         try {
             $params['token'] = $this->apiKey;
-            return $this->client->get($this->baseUrl . $method, ['query' => $params])->json(['object' => true]);
+            return $this->httpClient->get($this->baseUrl . $method, ['query' => $params])->json(['object' => true]);
         } catch (RequestException $e) {
             throw new Exception($e->getMessage(), $e->getCode());
         }
