@@ -25,7 +25,7 @@ try
     $response = $client->publicInbox('mail@to.com');
     echo('<pre>' . print_r($response, true) . '</pre>');
 }
-catch (Brnlbs\Spacejam\Exception $e)
+catch (Brnlbs\Mailinator\Exception $e)
 {
     printf('%d: %s', $e->getCode(), $e->getMessage());
 }
